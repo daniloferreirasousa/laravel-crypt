@@ -1,26 +1,26 @@
-># <center>**🔐 Laravel Crypt 🔐**</center>
+># **🔐 Laravel Crypt 🔐**
 >
 > Este repositório é para fins de estudos sobre Criptografia, exemplos que utilizam Cifras antigas e modernas serão implementadas no projeto.
 
-### Cifras implementadas:
+## Cifras implementadas:
 
 - Cifra de Vigenère
 - Cifra de Vernam
 
 ---
 
-## Instalação e uso
+### Instalação e uso
 
 1. Copie o arquivo **.env.example** para **.env** com o seguinte comando no terminal
 
-```css
+```
 cp .env.example .env
 ```
 
 2. Defina as seguintes váriáveis do arquivo **.env** que foi criado com o comando acima
 
 
-```json
+```env
 APP_NAME=nome_do_seu_app
 APP_URL=url_do_seu_app
 APP_USER=nome
@@ -40,7 +40,7 @@ REDIS_HOST=redis
 
 3. Agora que já temos as nossas variáveis de ambiente definidas, devemos criar o nosso container docker com o seguinte comando:
 
-```css
+```
 docker-compose up -d
 ```
 
@@ -48,7 +48,6 @@ docker-compose up -d
 
 ```
 docker ps
-
 docker exec -it [nome-sua-app] bash
 ```
 
@@ -59,7 +58,8 @@ composer install
 composer update -o --prefer-dist
 ```
 
-6. Crie a chave da aplicação com o seguinte comando: 
+6. Crie a chave da aplicação com o seguinte comando:
+
 ```
 php artisan key:generate
 ```
